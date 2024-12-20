@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: lotfiboucherit/mytom:latest
+        image: lotfiboucherit/mytom:${BUILD_NUMBER}
         ports:
         - containerPort: 8080
 
