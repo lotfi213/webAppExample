@@ -5,7 +5,7 @@ COPY context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
 COPY context.xml /usr/local/tomcat/webapps/host-manager/META-INF/context.xml
 
 # Copy the contents of webapps.dist to webapps
-COPY webapps.dist /usr/local/tomcat/webapps/
+COPY /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
 
 # Add custom tomcat-users.xml for setting manager/admin accounts
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
