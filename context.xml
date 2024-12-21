@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" privileged="true">
+
+    <!-- Allow remote access to Manager and Host Manager -->
+    <Manager update="false" />
+
+</Context>
