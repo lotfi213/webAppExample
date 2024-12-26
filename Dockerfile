@@ -10,6 +10,9 @@ COPY context.xml /usr/local/tomcat/webapps/host-manager/META-INF/context.xml
 # Add custom tomcat-users.xml for setting manager/admin accounts
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 
+# Add the .war file to the webapps directory
+COPY *.war /usr/local/tomcat/webapps/
+
 # Expose Tomcat ports
 EXPOSE 8080
 EXPOSE 8009
